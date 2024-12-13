@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+	Structure Module
+----------------------------------------------------*/
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック体","YuGothic","游ゴシック","Yu Gothic","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",'Meiryo',"ＭＳ Ｐゴシック",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  color: #333333;
+  text-align: center;
+  line-height: 1.65;
+  letter-spacing: 1px;
+  word-break: break-all;
+  -ms-word-break: break-all;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*----------------------------------------------------
+	Headings Module
+----------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*----------------------------------------------------
+	Phrasing Module
+----------------------------------------------------*/
+p {
+  margin: 0;
+  padding: 0;
+}
+
+cite, dfn, address, i, em {
+  font-style: normal;
+}
+
+strong, em, b {
+  font-weight: normal;
+}
+
+u {
+  text-decoration: none;
+}
+
+abbr {
+  border: 0 none;
+}
+
+mark {
+  background-color: transparent;
+}
+
+q {
+  quotes: none;
+}
+
+button {
+  text-align: left;
+  cursor: pointer;
+}
+
+input:focus, button:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+/*----------------------------------------------------
+	Hypertext Module
+----------------------------------------------------*/
+a {
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(152, 152, 152, 0.3);
+}
+
+a:link,
+a:visited {
+  color: #ff0000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active,
+a:focus {
+  background-color: transparent;
+}
+
+/*----------------------------------------------------
+	Image Module
+----------------------------------------------------*/
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+
+/*----------------------------------------------------
+	Embedded Module
+----------------------------------------------------*/
+object, embed {
+  outline: none;
+}
+
+/*----------------------------------------------------
+	List Module
+----------------------------------------------------*/
+ul, ol, dl, dt, dd, li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ol li {
+  list-style: none;
+}
+
+/*----------------------------------------------------
+	Table Module
+----------------------------------------------------*/
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th, td {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+/*----------------------------------------------------
+	Forms Module
+----------------------------------------------------*/
+form, button, input, select, option, textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+textarea {
+  width: 350px;
+  font-size: 12px;
+}
+
+input {
+  border: 0 none;
+  border-radius: 0px;
+}
+
+button {
+  background: none;
+  border: 0 none;
+  overflow: visible;
+}
+
+/*----------------------------------------------------
+	HTML5 Reset
+----------------------------------------------------*/
+article, aside, figure, figcaption, dialog, details,
+footer, header, menu, main, nav, section, summary {
+  display: block;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}

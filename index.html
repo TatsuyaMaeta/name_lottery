@@ -1,0 +1,166 @@
+<html
+    class="js svg canvas webgl bgpositionshorthand multiplebgs csspointerevents inlinesvg cubicbezierrange csscalc cssgradients opacity supports svgclippaths smil pointerevents no-touchevents fontface generatedcontent nthchild cssvhunit cssvmaxunit cssvminunit cssvwunit mediaqueries textshadow cssanimations csspseudoanimations appearance backgroundcliptext backgroundsize bgpositionxy bgsizecover borderimage boxsizing cssfilters ellipsis flexbox flexboxlegacy no-flexboxtweener flexwrap cssreflections csstransforms csstransforms3d preserve3d csstransitions no-csspseudotransitions userselect backgroundblendmode"
+    lang="ja"
+>
+    <head
+        prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
+    >
+        <meta charset="utf-8" />
+        <!--[if IE]>
+            <meta http-equiv="X-UA-Compatible" content="requiresActiveX=true" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <![endif]-->
+        <title>くじ引き（抽選ツール）</title>
+        <link href="./css/base.css" rel="stylesheet" media="all" />
+        <link href="./css/contents.css" rel="stylesheet" media="all" />
+        <link href="./css/lottery.css" rel="stylesheet" media="all" />
+        </head>
+    <body>
+        <div
+            id="wrapper"
+            class="lottery lowerCommon"
+            style="height: auto !important"
+        >
+            <header id="header">
+                <div id="header_top">
+                    <h1 class="page_name">くじ引き（抽選ツール）</h1>
+                    <!-- /#header_top -->
+                </div>
+            </header>
+            <div id="contents_wrap">
+                <div id="container">
+                    <div id="container_in" style="height: auto !important">
+                        <div id="main">
+                            <div
+                                id="sections_wrap"
+                                style="height: auto !important"
+                            >
+                                <section
+                                    id="tool_box"
+                                    style="height: auto !important"
+                                >
+                                    <div class="block" id="ajaxBody">
+                                        <div class="table">
+                                            <input
+                                                type="hidden"
+                                                name="mode"
+                                                value="items"
+                                            />
+                                            <div class="tbody">
+                                                <div class="tr">
+                                                    <div class="td e">
+                                                        抽選数字範囲
+                                                    </div>
+                                                    <div class="td v">
+                                                        <input
+                                                            id="start"
+                                                            type="number"
+                                                            name="start"
+                                                            class="form_txt disabled"
+                                                            value="0"
+                                                            step="1"
+                                                        />～
+                                                        <input
+                                                            id="end"
+                                                            type="number"
+                                                            name="end"
+                                                            class="form_txt disabled"
+                                                            value="100"
+                                                            step="1"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td e">
+                                                        抽選候補リスト<br />（箇条書きで複数行）
+                                                    </div>
+                                                    <div class="td v">
+                                                        <textarea
+                                                            id="items"
+                                                            name="items"
+                                                            rows="14"
+                                                            placeholder="改行で区切って入力してください"
+                                                            spellcheck="false"
+                                                        ></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="tr">
+                                                    <div class="td e">
+                                                        抽選秒数
+                                                    </div>
+                                                    <div class="td v">
+                                                        <input
+                                                            id="time"
+                                                            type="number"
+                                                            name="time"
+                                                            class="form_txt"
+                                                            value="3"
+                                                            step="1"
+                                                            min="0"
+                                                        />秒
+                                                        <button
+                                                            type="button"
+                                                            class="btn_form btn_submit"
+                                                            onclick="javascript:lottery();"
+                                                            id="start-btn"
+                                                        >
+                                                            抽選
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.tbody -->
+                                        </div>
+                                        <!-- /.table -->
+                                    </div>
+                                    <!-- /.block -->
+
+                                    <div
+                                        class="main_adv"
+                                        style="height: auto !important"
+                                    >
+                                        <div class="block">
+                                            <div class="table">
+                                                <div class="tbody">
+                                                    <div class="tr">
+                                                        <div class="td e">
+                                                            抽選結果
+                                                        </div>
+                                                        <div
+                                                            class="td v resultTD"
+                                                        >
+                                                            <div
+                                                                id="resultTitle"
+                                                            ></div>
+                                                            <div
+                                                                id="resultBody"
+                                                            ></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.tbody -->
+                                            </div>
+                                            <!-- /.table -->
+                                        </div>
+                                        <!-- /.block -->
+
+                                        <!-- /.tool_box_body -->
+                                    </div>
+                                    <!-- /#tool_box -->
+                                </section>
+
+                            </div>
+
+                            <!-- /#container_in -->
+                        </div>
+                        <!-- /#container -->
+                    </div>
+
+                    <!-- /#contents_wrap -->
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
