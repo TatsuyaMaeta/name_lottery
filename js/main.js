@@ -31,10 +31,15 @@ function lottery() {
         numbers = items;
     }
 
-    numbers.forEach((v, index) => {
+    console.log(numbers, numbers.length);
+    for (let index = 0; index < 3; index++) {
         numbers = numbers.concat(numbers);
-    });
-    console.log("numbers", numbers);
+        
+    }
+    // numbers.forEach((v, index) => {
+    //     numbers = numbers.concat(numbers);
+    // });
+    // console.log("numbers", numbers);
 
     // Fisher-Yatesシャッフルアルゴリズムで配列をシャッフル
     function shuffle(array) {
